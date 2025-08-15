@@ -62,51 +62,30 @@ input {
 	-o-transition: box-shadow .5s ease;
 	-ms-transition: box-shadow .5s ease;
 	transition: box-shadow .5s ease;
-
 }
-input:hover{
-    background: rgba(0,0,0,1);
-    font-size: 15px;
-    border: #670d10 5px solid;
-}
-input:focus {
-    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
-
 
 </style>
-
-
-  
+ 
 </head>
-
-
-
-
 
 <body>
 <h1> Diabetes Predictor </h1>
  <div class="login">
     <form action="{{ url_for('predict')}}"method="post">
-                <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg. 0"><br>
-                <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80"><br>
-                <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80"><br>
-                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20"><br>
-                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80"><br>
-                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1"><br>
-                <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52"><br>
-                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34"><br>
+                <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg. 0" /><br>
+                <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80" /><br>
+                <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80" /><br>
+                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20" /><br>
+                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80" /><br>
+                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1" /><br>
+                <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52" /><br>
+                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34" /><br>
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 	<br>
    <br>
    {{ prediction_text }}
 </div>
-	<footer>Made with ❤️ By Shashi kant</footer>
+	<footer>Made with By Shashi kant</footer>
 </body>
-</html>
-
-
-
-
-    
 </html>
